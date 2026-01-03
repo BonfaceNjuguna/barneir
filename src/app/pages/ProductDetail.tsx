@@ -5,11 +5,11 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 const productData = {
   name: 'Minimal Blazer',
-  price: '€890',
+  price: 'Ksh 8900',
   description: 'A timeless piece crafted from the finest Italian wool. This minimal blazer embodies understated elegance with its clean lines and impeccable tailoring. Perfect for both formal occasions and refined everyday wear.',
   composition: '100% Virgin Wool',
   care: 'Dry clean only',
-  madeIn: 'Italy',
+  madeIn: 'Kenya',
   images: [
     'https://images.unsplash.com/photo-1613728455120-d00493b5e77e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZmFzaGlvbiUyMGJsYWNrJTIwd2hpdGV8ZW58MXx8fHwxNzY3NDQwOTk5fDA&ixlib=rb-4.1.0&q=80&w=1080',
     'https://images.unsplash.com/photo-1762232977931-2e3f5949b2aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjbG90aGluZyUyMGRldGFpbCUyMHRleHR1cmV8ZW58MXx8fHwxNzY3NDQwOTk5fDA&ixlib=rb-4.1.0&q=80&w=1080',
