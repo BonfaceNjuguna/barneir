@@ -1,12 +1,11 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 const productData = {
   name: 'Minimal Blazer',
   price: 'Ksh 8900',
-  description: 'A timeless piece crafted from the finest Italian wool. This minimal blazer embodies understated elegance with its clean lines and impeccable tailoring. Perfect for both formal occasions and refined everyday wear.',
+  description: 'A timeless piece crafted from the finest wool. This minimal blazer embodies understated elegance with its clean lines and impeccable tailoring. Perfect for both formal occasions and refined everyday wear.',
   composition: '100% Virgin Wool',
   care: 'Dry clean only',
   madeIn: 'Kenya',
@@ -20,14 +19,13 @@ const productData = {
 const sizes = ['XS', 'S', 'M', 'L', 'XL'];
 
 export function ProductDetail() {
-  const { id } = useParams();
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6">
+    <div className="min-h-screen pt-24 md:pt-32 pb-12 md:pb-20 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
           {/* Product Images */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -67,11 +65,11 @@ export function ProductDetail() {
             transition={{ duration: 0.8 }}
             className="lg:pt-8"
           >
-            <h1 className="text-4xl tracking-[0.15em] font-serif mb-4">{productData.name}</h1>
-            <p className="text-2xl tracking-wide mb-8 opacity-70">{productData.price}</p>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl tracking-[0.1em] md:tracking-[0.15em] font-serif mb-3 md:mb-4">{productData.name}</h1>
+            <p className="text-xl md:text-2xl tracking-wide mb-6 md:mb-8 opacity-70">{productData.price}</p>
 
-            <div className="mb-8 pb-8 border-b border-neutral-200">
-              <p className="text-base tracking-wide leading-relaxed opacity-70">
+            <div className="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-neutral-200">
+              <p className="text-sm md:text-base tracking-wide leading-relaxed opacity-70">
                 {productData.description}
               </p>
             </div>

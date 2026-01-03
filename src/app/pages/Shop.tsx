@@ -46,16 +46,16 @@ export function Shop() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6">
+    <div className="min-h-screen pt-24 md:pt-32 pb-12 md:pb-20 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-10 md:mb-16"
         >
-          <h1 className="text-5xl tracking-[0.2em] font-serif mb-6">Collection</h1>
-          <p className="text-lg tracking-wide opacity-60">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl tracking-[0.1em] md:tracking-[0.2em] font-serif mb-4 md:mb-6">Collection</h1>
+          <p className="text-base md:text-lg tracking-wide opacity-60">
             Timeless pieces for the modern wardrobe
           </p>
         </motion.div>
@@ -65,7 +65,7 @@ export function Shop() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-16 flex gap-8 text-sm tracking-wider"
+          className="mb-10 md:mb-16 flex gap-4 md:gap-8 text-xs md:text-sm tracking-wider overflow-x-auto pb-2"
         >
           <button className="uppercase opacity-100 border-b border-black pb-1">All</button>
           <button className="uppercase opacity-40 hover:opacity-70 transition-opacity">Outerwear</button>

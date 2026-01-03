@@ -2,9 +2,9 @@ import { Facebook } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="border-t border-black/5 py-16 mt-32">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <footer className="border-t border-black/5 py-10 md:py-16 mt-16 md:mt-32">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <div>
             <h3 className="text-2xl tracking-[0.2em] font-serif mb-6">BARNEIR</h3>
             <p className="text-sm tracking-wide opacity-60">

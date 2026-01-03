@@ -3,15 +3,15 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function About() {
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <div className="min-h-screen pt-24 md:pt-32 pb-12 md:pb-20">
       {/* Hero */}
-      <section className="px-6 mb-32">
+      <section className="px-4 md:px-6 mb-16 md:mb-24 lg:mb-32">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-6xl tracking-[0.2em] font-serif mb-8"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0.1em] md:tracking-[0.2em] font-serif mb-6 md:mb-8"
           >
             About Barneir
           </motion.h1>
@@ -19,7 +19,7 @@ export function About() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl tracking-wide opacity-70"
+            className="text-base md:text-lg lg:text-xl tracking-wide opacity-70"
           >
             Reconnecting individuals to elegance, luxury, and comfort
           </motion.p>
@@ -27,8 +27,8 @@ export function About() {
       </section>
 
       {/* Mission Statement */}
-      <section className="px-6 mb-32">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <section className="px-4 md:px-6 mb-16 md:mb-24 lg:mb-32">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -38,7 +38,7 @@ export function About() {
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1759793500315-e64644e6954c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBicmFuZCUyMHN0dWRpbyUyMHBob3RvZ3JhcGh5fGVufDF8fHx8MTc2NzQ0MTAwMHww&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Barneir Studio"
-              className="w-full h-[600px] object-cover"
+              className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
             />
           </motion.div>
 
@@ -47,17 +47,17 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8"
           >
             <div>
-              <h2 className="text-3xl tracking-[0.2em] font-serif mb-6">Our Mission</h2>
-              <p className="text-lg tracking-wide leading-relaxed opacity-70">
+              <h2 className="text-2xl sm:text-3xl tracking-[0.1em] md:tracking-[0.2em] font-serif mb-4 md:mb-6">Our Mission</h2>
+              <p className="text-base md:text-lg tracking-wide leading-relaxed opacity-70">
                 Barneir is more than a clothing line—it's a philosophy. We believe that true luxury 
                 lies in the intersection of elegance, comfort, and timeless design.
               </p>
             </div>
             <div>
-              <p className="text-lg tracking-wide leading-relaxed opacity-70">
+              <p className="text-base md:text-lg tracking-wide leading-relaxed opacity-70">
                 Every piece we create is designed to help you step into your essence, 
                 reconnecting you with the confidence that comes from wearing something truly exceptional.
               </p>
@@ -67,18 +67,18 @@ export function About() {
       </section>
 
       {/* Values */}
-      <section className="px-6 mb-32 bg-neutral-50 py-32">
+      <section className="px-4 md:px-6 mb-16 md:mb-24 lg:mb-32 bg-neutral-50 py-16 md:py-24 lg:py-32">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-4xl tracking-[0.2em] font-serif mb-16 text-center"
+            className="text-3xl sm:text-4xl tracking-[0.1em] md:tracking-[0.2em] font-serif mb-10 md:mb-16 text-center"
           >
             Our Values
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

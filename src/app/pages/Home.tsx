@@ -25,12 +25,12 @@ export function Home() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="relative z-10 text-center text-white px-6"
+          className="relative z-10 text-center text-white px-4 md:px-6 max-w-full"
         >
-          <h1 className="text-6xl md:text-8xl tracking-[0.3em] font-serif mb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl tracking-[0.15em] md:tracking-[0.3em] font-serif mb-6 md:mb-8">
             BARNEIR
           </h1>
-          <p className="text-xl md:text-2xl tracking-[0.2em] mb-12 font-light">
+          <p className="text-lg sm:text-xl md:text-2xl tracking-[0.1em] md:tracking-[0.2em] mb-8 md:mb-12 font-light">
             Step in your essence.
           </p>
           <Link
@@ -43,7 +43,7 @@ export function Home() {
       </section>
 
       {/* Brand Philosophy */}
-      <section className="py-32 px-6">
+      <section className="py-16 md:py-24 lg:py-32 px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -51,10 +51,10 @@ export function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl tracking-[0.2em] font-serif mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-[0.1em] md:tracking-[0.2em] font-serif mb-6 md:mb-8">
               Modern Elegance
             </h2>
-            <p className="text-lg tracking-wide leading-relaxed opacity-70">
+            <p className="text-base md:text-lg tracking-wide leading-relaxed opacity-70">
               Barneir is a luxury clothing line reconnecting every individual to elegance, luxury, and comfort. 
               We embody modern sophistication, minimalism, and timeless refinement.
             </p>
@@ -63,18 +63,18 @@ export function Home() {
       </section>
 
       {/* Featured Collection */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-3xl tracking-[0.2em] font-serif mb-16 text-center"
+            className="text-2xl sm:text-3xl tracking-[0.1em] md:tracking-[0.2em] font-serif mb-10 md:mb-16 text-center"
           >
             Featured Collection
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -119,8 +119,8 @@ export function Home() {
       </section>
 
       {/* Craftsmanship Highlight */}
-      <section className="py-32 px-6 bg-neutral-50">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-24 lg:py-32 px-4 md:px-6 bg-neutral-50">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -140,13 +140,13 @@ export function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl tracking-[0.2em] font-serif mb-8">
+            <h2 className="text-3xl sm:text-4xl tracking-[0.1em] md:tracking-[0.2em] font-serif mb-6 md:mb-8">
               Craftsmanship
             </h2>
-            <p className="text-lg tracking-wide leading-relaxed opacity-70 mb-6">
+            <p className="text-base md:text-lg tracking-wide leading-relaxed opacity-70 mb-4 md:mb-6">
               Every piece is crafted with meticulous attention to detail, using only the finest fabrics and materials.
             </p>
-            <p className="text-lg tracking-wide leading-relaxed opacity-70">
+            <p className="text-base md:text-lg tracking-wide leading-relaxed opacity-70">
               Our commitment to quality ensures that each garment not only looks exceptional but feels extraordinary.
             </p>
           </motion.div>

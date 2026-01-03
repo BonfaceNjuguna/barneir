@@ -21,7 +21,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen font-sans antialiased">
+      <div className="min-h-screen font-sans antialiased overflow-x-hidden">
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
